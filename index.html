@@ -48,19 +48,27 @@
       font-family: 'Open-Sans', Roboto, Helvetica, sans-serif;
     }
     .heading, .subheading {
-      font-family: Roboto, Ubuntu, Helvetica, sans-serif;
+      font-family: 'Open Sans', Ubuntu, Helvetica, sans-serif;
       text-align: center;
     }
     p.lead {
-      font-family: Roboto, Open-Sans, Helvetica, sans-serif;
+      font-family: 'Open-Sans', Ubuntu, Helvetica, sans-serif;
       padding-top: 1.5%;
-      font-size: 24px;
-      line-height: 30px;
+      font-size: 22px;
+      line-height: 28px;
     }
     p {
-      font-family: 'Roboto', Open-Sans, Helvetica, sans-serif;      
-      font-size: 18px;
-      line-height: 24px;
+      font-family: 'Open Sans', Ubuntu, Helvetica, sans-serif;      
+      font-size: 16px;
+      line-height: 22px;
+    }
+
+    /* Product style */
+    .logo {
+      padding-top: 0px;
+    }
+    .level1 {
+      padding-top: 60px;
     }
     
     /* Video pitch and Action */
@@ -74,11 +82,11 @@
       background-color: #343434;
       padding: 3% 0%;
     }
-    .thermometer, .order, .social, .statistics {
-      text-align: center;
+    .jumbotron {
+      text-align: justify;
     }
-    .video {
-      text-align: right;
+    .video, .thermometer, .order, .social, .statistics {
+      text-align: center;
     }
     .statistics h3, .statistics p {
       color: white;
@@ -165,35 +173,38 @@
       <!-- www.google.com/fonts/specimen/Ubuntu -->
       <!-- www.google.com/fonts/specimen/Ubuntu#pairings -->
       <div class="row-fluid heading">
-	<div class="span12">
-	  <h1>CloudRoom</h1>
+	<div class="span2 offset3 logo">
+	  <img src="http://i.imgur.com/mYddt2W.png"/>
+	</div>
+	<div class="row-fluid level1">
+	  <div class="span3"><h1>CloudRoom</h1></div>
 	</div>
       </div>
-
       <div class="row-fluid subheading">
 	<div class="span12">
 
 	  <!-- Special typography from Boostrap for lead paragraph. -->
 	  <!-- http://twitter.github.io/bootstrap/base-css.html#typography -->
-	  <p class="lead">Take free courses online, manage your School Virtual Classrooms...Anytime, anywhere, with anybody.</p>
+	  <p class="lead">Take free courses online. Create & Manage Universities's Virtual Classrooms. Anytime, anywhere.</p>
 	</div> 
       </div>
 
       <div class="row-fluid pitch">
-	<div class="span5 offset1 video">
-	  <div class="span5 logo">
-	    <img src="http://i.imgur.com/mYddt2W.png" alt="CloudRoom" />
-	  </div>
+	<div class="span5 video">
 	  <div class="jumbotron">
-	    <h1>Social Learning. On the Cloud</h1>
-	    <p>Whether you are enrolled in a University across the globe,
+	    <h1>Social Learning. 
+	      <br>On the Cloud</h1>
+	    <p class="text-info">Whether you are enrolled in a University across the globe,
 	      or you want to simply learn from World's best Universities,
-	      Cloudroom lets you take courses Online or create your own ones and share them with anyone!</p>
-	    <p style="text-align: center;"><a class="btn btn-info" onclick="scrollTo('#marketing2')">Learn more</a></p>
+	      Cloudroom lets you take courses Online or create your own ones and share them with anyone!
+	      Private or MOOC. You decide how to learn or how to teach!</p>
+	    <div class="span7 offset4 btn-learn">
+	      <p><a class="btn btn-info" onclick="scrollTo('#marketing2')">Learn more</a></p>
+	    </div>
 	  </div>
 	</div>
 	<!-- We define new 'actions' div to contain statistics, order, and share buttons. -->
-	<div class="span5 actions">
+	<div class="span5 offset1 actions">
 	  <div class="row-fluid">
 	    <div class="span8 offset2">
 	      <div class="row-fluid statistics">
@@ -228,32 +239,31 @@
 	  </div>
 	  </div>
 	  <div class="row-fluid">
-	    <div class="span6 offset3 order">
-	     <!-- Custom Bitcoin button. -->
-	     <a class="coinbase-button" data-code="31c90ba126c20dd80f5846208a1658eb" data-button-style="custom_large" href="https://coinbase.com/checkouts/31c90ba126c20dd80f5846208a1658eb">Donate Bitcoins</a><script src="https://coinbase.com/assets/button.js" type="text/javascript"></script>
+	    <!-- Custom Bitcoin button. -->
+	    <div class="span7 offset3 order">
+	      <a class="coinbase-button" data-code="31c90ba126c20dd80f5846208a1658eb" data-button-style="custom_large" href="https://coinbase.com/checkouts/31c90ba126c20dd80f5846208a1658eb">Donate Bitcoins</a><script src="https://coinbase.com/assets/button.js" type="text/javascript"></script>
 	    </div>
-	  </div>
-	  <div class="row-fluid">
-	    <div class="span8 offset2 social">
-	      <!-- AddThis Button BEGIN -->
-	      <div class="addthis_toolbox addthis_default_style addthis_32x32_style">
-		<a class="addthis_button_facebook"></a>
-		<a class="addthis_button_twitter"></a>
-		<a class="addthis_button_google_plusone_share"></a>
-		<a class="addthis_button_linkedin"></a>
-		<a class="addthis_button_tumblr"></a>
-		<a class="addthis_button_tuenti"></a>
-		<a class="addthis_button_blogger"></a>
-		<a class="addthis_button_compact"></a><a class="addthis_counter addthis_bubble_style"></a>
+	    <div class="row-fluid">
+	      <div class="span8 offset2 social">
+		<!-- AddThis Button BEGIN -->
+		<div class="addthis_toolbox addthis_default_style addthis_32x32_style">
+		  <a class="addthis_button_facebook"></a>
+		  <a class="addthis_button_twitter"></a>
+		  <a class="addthis_button_google_plusone_share"></a>
+		  <a class="addthis_button_linkedin"></a>
+		  <a class="addthis_button_tumblr"></a>
+		  <a class="addthis_button_tuenti"></a>
+		  <a class="addthis_button_blogger"></a>
+		  <a class="addthis_button_compact"></a><a class="addthis_counter addthis_bubble_style"></a>
+		</div>
+		<script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script>
+		<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-520208803de374c5"></script>
+		<!-- AddThis Button END -->
 	      </div>
-	      <script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script>
-	      <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-520208803de374c5"></script>
-	      <!-- AddThis Button END -->
-	   </div>
+	    </div>
 	  </div>
 	  </div>
 	</div>
-      </div>
 	<!-- Beyond this part the marketing copy begins. -->
 	<!-- http://developer.mozilla.org/en-US/docs/Web/CSS/text-align -->
 	<!-- http://twitter.github.io/bootstrap/base-css.html#images -->
