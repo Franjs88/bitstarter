@@ -42,13 +42,64 @@
      }
     }
 
+
+
     /* All form factors */
+
+     /* CUSTOMIZE THE NAVBAR
+    -------------------------------------------------- */
+
+    /* Special class on .container surrounding .navbar, used for positioning it into place. */
+    .navbar-wrapper {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 10;
+      margin-top: 20px;
+      margin-bottom: -90px; /* Negative margin to pull up carousel. 90px is roughly margins and height of navbar. */
+    }
+    .navbar-wrapper .navbar {
+
+    }
+
+    /* Remove border and change up box shadow for more contrast */
+    .navbar .navbar-inner {
+      border: 0;
+      -webkit-box-shadow: 0 2px 10px rgba(0,0,0,.25);
+         -moz-box-shadow: 0 2px 10px rgba(0,0,0,.25);
+              box-shadow: 0 2px 10px rgba(0,0,0,.25);
+    }
+
+    /* Downsize the brand/project name a bit */
+    .navbar .brand {
+      padding: 14px 20px 16px; /* Increase vertical padding to match navbar links */
+      font-family: 'Roboto', Ubuntu, Helvetica, Open Sans sans-serif;
+      font-size: 22px;
+      font-weight: bold;
+      text-shadow: 0 -1px 0 rgba(0,0,0,.5);
+    }
+
+    /* Navbar links: increase padding for taller navbar */
+    .navbar .nav > li > a {
+      padding: 15px 20px;
+    }
+
+    /* Offset the responsive button for proper vertical alignment */
+    .navbar .btn-navbar {
+      margin-top: 10px;
+    }
+
 
     /* Main body and headings */
     body {
       font-family: 'Open-Sans', Roboto, Helvetica, sans-serif;
     }
-    .heading, .subheading {
+    .heading {
+      font-family: 'Roboto', Ubuntu, Helvetica, Open Sans sans-serif;
+      text-align: center;
+    }
+    .subheading {
       font-family: 'Open Sans', Ubuntu, Helvetica, sans-serif;
       text-align: center;
     }
@@ -237,15 +288,15 @@
 
 	<div class="span6 video">
 	  <div class="jumbotron">
-	    <h1>Social Learning. 
-	      <br>On the Cloud</h1>
+	    <h2>Social Learning. 
+	      <br>On the Cloud</h2>
 	    <p class="text-info">Whether you are enrolled in a University across the globe,
 	      or you want to simply learn from World's best Universities,
 	      Cloudroom lets you take courses Online or create your own ones and share them with anyone!
 	      Private or MOOC. You decide how to learn or how to teach!</p>
 	    <div class="row-fluid donate-learn"> 
 	      <div class="span6 btn-learn">
-		<p class="text-center"><a class="btn btn-info" onclick="scrollTo('#marketing2')">Learn more</a></p>
+		<p class="text-center"><a class="btn btn-info" onclick="scrollTo('#marketing1')">Learn more</a></p>
 	      </div>
 	      <!-- Custom Bitcoin button. -->
 	      <div class="span6 btn-coinbase">
@@ -275,7 +326,7 @@
 	<!-- http://placehold.it -->
 	<div class="row-fluid section1" id="marketing1">
 	  <div class="span3 features list">
-	    <p><br>Support CloudRoom development donating the amount that you want</br></p> 
+	    <h3><br>Features</br></h3> 
 	    <ul class="icons-ul">
 	      <li><i class="icon-li icon-ok"></i>Massive Social E-learning management system</li>
 	      <li><i class="icon-li icon-ok"></i>Learn anywhere because it's Mobile!</li>
@@ -288,19 +339,20 @@
 	    </ul>
 	  </div>
 	  <div class="span3 Mobile">
-	    <p id="marketing2">
+	    <p>
+	      <h3><br>Multi-Device</br></h3>
 	      <br>Mobile, Desktop, Tablet...anytime, anywhere, any device!</br>
-	      Learn anywhere, at anytime!
-	      Multi-Platform application that will run in any existing platform thanks to Responsive Design!
+	      Learn anywhere, at anytime!   
 	    </p>
-	    <img src="http://inndevelop.com.mx/wp-content/uploads/2013/02/4141_apple-android-windows-mobile-blackberry-logo.png" alt="Mobile"> 
 	  </div>
 	  <div class="span3 recruit">
+	    <h3><br>Employ yourself</br></h3>
 	    <p>
 	      <br>Collaborate in projects online with other students.</br>      
       	      <br>Get a schoolarship, research fellowship, or go beyond academia and get a job from world's best Enterprises.</br> 
 	  </div>
 	  <div class="span3 management">
+	    <h3><br>Share with others</br></h3>
 	    <p>
 	      <br>Manage your student's courses at your University, share resources
 	      between students, professors, and researchers of any University in the world.
@@ -339,7 +391,7 @@
 		</div>
 		<div id="collapseTwo" class="accordion-body collapse">
 		  <div class="accordion-inner">
-		    Yes and no. CloudRoom lets Universities manage their old virtual Classrooms
+		    Yes and no. CloudRoom let Universities manage their old virtual Classrooms
 		    in a private way or make them Open for anyone in the world!
 		  </div>
 		</div>
